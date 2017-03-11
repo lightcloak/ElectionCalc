@@ -1,0 +1,19 @@
+Dzieñ dobry,
+
+Na wstêpnie powiem, ¿e by³o to bardzo rozwijaj¹ce zadanie. Do tej pory nie integrowa³em
+danych pochodz¹cych z internetu oraz ma³ej bazy danych. Wszystkie te rzeczy postara³em
+siê zrobiæ w miarê swoich mo¿liwoœci najlepiej choæ podkreœlê, ¿e po raz pierwszy.
+Nie komentowa³em wszystkich elementów które nale¿a³oby zmieniæ, jednak wiem, ¿e w kodzie
+istnieje bardzo du¿o nie doróbek. Niemal wszystkie pozostawi³em ze wzglêdu na nagl¹cy czas.
+£¹cznie pracowa³em nad tym zadaniem oko³o 2 dni.
+Jestem pewien ¿e w ci¹gu paru dni jestem w stanie znacz¹co poprawiæ jakoœæ tego ma³ego 
+programu. Natomiast z ma³¹ pomoc¹ myœlê, ¿e spe³nia³by wszystkie Pañstwa wymagania.
+
+Nie zrealizowane wymagania: eksport do dokumentów zewnêtrznych oraz zmiana widoku
+podsumowania. Nie znalaz³em darmowej biblioteki do eksportu a implementowanie czegoœ
+w³asnorêcznie zajê³oby za du¿o czasu.
+
+Przepraszam równie¿ za nieuporz¹dkowane nazewnictwo.
+
+Pozdrawiam,
+Mi³osz Rz¹sa.
