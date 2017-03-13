@@ -1,0 +1,17 @@
+﻿<Window x:Class="ElectionCalc.Vote"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElectionCalc"
+        mc:Ignorable="d"
+        Title="Vote" Width="530" Closing="Window_Closing" SizeToContent="Height" ResizeMode="NoResize" ScrollViewer.VerticalScrollBarVisibility="Auto">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock x:Name="txtBlk" TextWrapping="Wrap" Text="Welcome" Margin="10,0,10,10"/>
+            <StackPanel x:Name="List" />
+            <Button x:Name="btnVote" Content="Vote for selected candidate" Margin="10,0,10,10" Click="btnVote_Click"/>
+            <Button x:Name="btnBack" Content="Go Back" Margin="10,0,10,10" Click="btnBack_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
