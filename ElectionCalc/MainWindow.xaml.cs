@@ -12,6 +12,8 @@
         public MainWindow()
         {
             InitializeComponent();
+
+            DataContext = new LogInViewModel();
         }
 
         //public void logIn(string name, string surname, string pesel)

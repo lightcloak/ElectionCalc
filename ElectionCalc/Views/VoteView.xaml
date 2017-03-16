@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:ElectionCalc.Views"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid Background="Green">
+    <Grid>
         <StackPanel Margin="10">
             <TextBlock x:Name="txtBlk" TextWrapping="Wrap" Text="Welcome" />
             <StackPanel x:Name="List" Margin="0,10"/>
