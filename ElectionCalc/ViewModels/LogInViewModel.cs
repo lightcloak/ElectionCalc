@@ -1,37 +1,14 @@
 ﻿namespace ElectionCalc.ViewModels
 {
-    using System;
-    using System.Windows;
-    using System.Windows.Input;
+    using Models;
 
-    class LogInViewModel
+    class LogInViewModel : ObservableObject
     {
-        private ICommand doSomethingCommand = new MyCommand();
+        public Voter Voter { get; private set; }
 
-        public ICommand DoSomethingCommand
+        public LogInViewModel()
         {
-            get
-            {
-                return doSomethingCommand;
-            }
-        }
-    }
-
-    public class MyCommand : ICommand
-    {
-        public bool CanExecute(object parameter)
-        {
-            return true;
-        }
-
-        public event EventHandler CanExecuteChanged;
-
-        public void Execute(object parameter)
-        {
-            string dataFromView = (string)parameter;
-
-            // ...
-            MessageBox.Show("Hello: " + dataFromView);
+            Voter = new Voter();
         }
     }
 }

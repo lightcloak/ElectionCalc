@@ -70,10 +70,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\Age.cs" />
+    <Compile Include="Models\ObservableObject.cs" />
     <Compile Include="Models\Person.cs" />
-    <Compile Include="Dep_Summary.xaml.cs">
-      <DependentUpon>Dep_Summary.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Models\Validators.cs" />
     <Compile Include="ViewModels\ControlViewModel.cs" />
     <Compile Include="ViewModels\LogInViewModel.cs" />
@@ -81,13 +79,7 @@
     <Compile Include="Views\ControlView.xaml.cs">
       <DependentUpon>ControlView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Dep_Vote.xaml.cs">
-      <DependentUpon>Dep_Vote.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Models\WebTools.cs" />
-    <Compile Include="Dep_WorkWindow.xaml.cs">
-      <DependentUpon>Dep_WorkWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\LogInView.xaml.cs">
       <DependentUpon>LogInView.xaml</DependentUpon>
     </Compile>
@@ -106,19 +98,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Dep_Summary.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Views\ControlView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Dep_Vote.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Dep_WorkWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
