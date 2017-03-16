@@ -11,10 +11,5 @@
         {
             InitializeComponent();
         }
-
-        private void btnLogIn_Click(object sender, System.Windows.RoutedEventArgs e)
-        {
-
-        }
     }
 }
