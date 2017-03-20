@@ -67,7 +67,7 @@ namespace ElectionCalc
                     // pominiecie formatowanie .ToString(P2) i String.Format
                     rec.ToolTip = ((width / lwidth * 100) + "%").ToString();
 
-                    rec.Width = width+10;
+                    rec.Width = width + 10;
                     rec.Fill = new SolidColorBrush(System.Windows.Media.Colors.BlueViolet);
                     rec.HorizontalAlignment = HorizontalAlignment.Left;
 

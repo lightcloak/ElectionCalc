@@ -1,15 +1,18 @@
 ﻿namespace ElectionCalc.ViewModels
 {
+    using Commands;
     using Models;
     using System.Windows;
 
-    class LogInViewModel : ObservableObject
+    public class LogInViewModel : ObservableObject
     {
         public Voter Voter { get; private set; }
+        public PerformCommand LogInCommand { get; private set; }
 
         public LogInViewModel()
         {
             Voter = new Voter();
+            LogInCommand = new PerformCommand(LogIn);
         }
 
         public void LogIn()

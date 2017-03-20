@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace ElectionCalc
 {
-    // klasa pochodzi z adresu https://gist.github.com/faisalman
-    // Zaimplementowac wzorzec singleton ze wzgledu na specyfike
-    // wykorzystania klasy
+    // Source https://gist.github.com/faisalman
     public class Age
     {
         public int Years;

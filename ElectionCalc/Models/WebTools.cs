@@ -8,7 +8,7 @@ namespace ElectionCalc
 {
     public static class WebTools
     {
-        // Zaimplementowac awaiter
+        // TODO: awaiter
         public static JObject JSONFromUrl(string url)
         {
             using (WebClient wc = new WebClient())

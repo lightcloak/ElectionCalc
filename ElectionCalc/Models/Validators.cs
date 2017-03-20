@@ -8,8 +8,8 @@ namespace ElectionCalc
 {
     static class Validators
     {
-        // funkcja pochodzi z adresu: http://www.extensionmethod.net/2004/csharp/string/isvalidnip-isvalidregon-isvalidpesel
-        public static bool IsValidPESEL(string input)
+        // Source: http://www.extensionmethod.net/2004/csharp/string/isvalidnip-isvalidregon-isvalidpesel
+        public static bool ValidPESEL(string input)
         {
             int[] weights = { 1, 3, 7, 9, 1, 3, 7, 9, 1, 3 };
             bool result = false;
@@ -28,7 +28,7 @@ namespace ElectionCalc
             return result;
         }
 
-        // funkcja pochodzi z adresu: http://www.extensionmethod.net/2004/csharp/string/isvalidnip-isvalidregon-isvalidpesel
+        // Source: http://www.extensionmethod.net/2004/csharp/string/isvalidnip-isvalidregon-isvalidpesel
         private static int CalculateControlSum(string input, int[] weights, int offset = 0)
         {
             int controlSum = 0;
@@ -39,16 +39,16 @@ namespace ElectionCalc
             return controlSum;
         }
 
-        public static bool IsOldEnough(string input)
+        public static bool OldEnough(string input)
         {
             bool result = false;
-            // Pobieramy numer pesel w celu otrzymania roku, miesiaca, dnia
+            // Take PESEL to extract day, mont, year of birth
             string yearmonthday = new string(input.Take(6).ToArray());
             int year = int.Parse(yearmonthday.Substring(0, 2));
             int month = int.Parse(yearmonthday.Substring(2, 2));
             int day = int.Parse(yearmonthday.Substring(4, 2));
 
-            // Malo wydajna obsluga roku >= 2000
+            // Not so good way of handling year >= 2000
             if (month > 20)
             {
                 month = int.Parse((month - 20).ToString("D2"));
@@ -67,8 +67,7 @@ namespace ElectionCalc
             {
                 result = true;
             }
-            // Malo eleganckie wyzerowanie referencji na obiekt
-            // Singleton bylby tutaj lepszym wyjsciem
+
             age = null;
             return result;
         }
