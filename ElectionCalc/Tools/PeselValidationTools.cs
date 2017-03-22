@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace ElectionCalc
+{ 
+    using System;
+    using System.Linq;
 
-namespace ElectionCalc
-{
-    static class Validators
+    static class PeselValidationTools
     {
         // Source: http://www.extensionmethod.net/2004/csharp/string/isvalidnip-isvalidregon-isvalidpesel
         public static bool ValidPESEL(string input)
@@ -39,16 +36,20 @@ namespace ElectionCalc
             return controlSum;
         }
 
-        public static bool OldEnough(string input)
+        public static bool OldEnough(long value)
         {
             bool result = false;
-            // Take PESEL to extract day, mont, year of birth
-            string yearmonthday = new string(input.Take(6).ToArray());
-            int year = int.Parse(yearmonthday.Substring(0, 2));
-            int month = int.Parse(yearmonthday.Substring(2, 2));
-            int day = int.Parse(yearmonthday.Substring(4, 2));
+            string input = value.ToString();
 
-            // Not so good way of handling year >= 2000
+            // long is a value type so no need for string.IsNullOrWhiteSpace(input)
+            if (input.Length != 11) return result;
+
+            // Process PESEL to extract day, mont, year of birth
+            // Take would be nicer
+            int year = int.Parse(input.Substring(0, 2));
+            int month = int.Parse(input.Substring(2, 2));
+            int day = int.Parse(input.Substring(4, 2));
+
             if (month > 20)
             {
                 month = int.Parse((month - 20).ToString("D2"));

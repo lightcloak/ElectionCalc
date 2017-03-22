@@ -1,12 +1,10 @@
-﻿using Newtonsoft.Json.Linq;
-using System;
-using System.Linq;
-using System.Net;
-using System.Text;
-
-namespace ElectionCalc
+﻿namespace ElectionCalc
 {
-    public static class WebTools
+    using Newtonsoft.Json.Linq;
+    using System.Net;
+    using System.Text;
+
+    public static class JsonHandlingTools
     {
         // TODO: awaiter
         public static JObject JSONFromUrl(string url)

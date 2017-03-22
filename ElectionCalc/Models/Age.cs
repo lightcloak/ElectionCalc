@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ElectionCalc
+﻿namespace ElectionCalc
 {
+    using System;
+
     // Source https://gist.github.com/faisalman
     public class Age
     {

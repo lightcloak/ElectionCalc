@@ -3,6 +3,9 @@
     using System;
     using System.Windows.Input;
 
+    /// <summary>
+    /// Implementing ICommand interface in order to route methods as delegates i MVVM.
+    /// </summary>
     public class PerformCommand : ICommand
     {
         public event EventHandler CanExecuteChanged;

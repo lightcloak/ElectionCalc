@@ -17,7 +17,10 @@
 
         public void LogIn()
         {
-            MessageBox.Show(Voter.Name + " " + Voter.Surname + " " + Voter.Pesel);
+            if (PeselValidationTools.OldEnough(Voter.Pesel))
+            {
+                MessageBox.Show(Voter.Name + " " + Voter.Surname + " " + Voter.Pesel);
+            };
         }
     }
 }

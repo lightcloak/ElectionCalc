@@ -73,14 +73,16 @@
     <Compile Include="Models\Age.cs" />
     <Compile Include="Models\ObservableObject.cs" />
     <Compile Include="Models\Person.cs" />
-    <Compile Include="Models\Validators.cs" />
+    <Compile Include="Tools\PeselValidationTools.cs" />
+    <Compile Include="ValidationRules\NameValidationRule.cs" />
+    <Compile Include="ValidationRules\PeselValidationRule.cs" />
     <Compile Include="ViewModels\ControlViewModel.cs" />
     <Compile Include="ViewModels\LogInViewModel.cs" />
     <Compile Include="ViewModels\VoteViewModel.cs" />
     <Compile Include="Views\ControlView.xaml.cs">
       <DependentUpon>ControlView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\WebTools.cs" />
+    <Compile Include="Tools\JsonHandlingTools.cs" />
     <Compile Include="Views\LogInView.xaml.cs">
       <DependentUpon>LogInView.xaml</DependentUpon>
     </Compile>

@@ -19,6 +19,26 @@
         <DataTemplate x:Name="LogInViewTemplate" DataType="{x:Type viewmodels:LogInViewModel}">
             <views:LogInView DataContext="{Binding}" />
         </DataTemplate>
+
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="Validation.ErrorTemplate">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <StackPanel>
+                            <Border BorderBrush="Red" BorderThickness="1" Margin="5,-20,5,0" >
+                                <AdornedElementPlaceholder Name="Error" ></AdornedElementPlaceholder>
+                            </Border>
+                            <TextBlock Margin="5,0,0,0"
+                                       Foreground="Red"
+                                       FontSize="10"
+                                       Text="{Binding [0].ErrorContent}">
+                            </TextBlock>
+                        </StackPanel>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
     </Window.Resources>
 
     <Grid>
